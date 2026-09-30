@@ -7,6 +7,65 @@
   padding: 20px;
   justify-content: space-between;
 }
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.second1 {
+  width: 34%;
+  height: 75vh;
+  background-color: blue;
+  border-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+}
+.second2 {
+  width: 34%;
+  height: 75vh;
+  padding-left: 25px;
+  border-right: 1px;
+  border: 1px solid black;
+}
+.second3 {
+  padding: 15px;
+  padding-left: 47px;
+}
+.front {
+  font-size: 50px;
+  font-weight: bold;
+}
+.mini1 {
+  width: 30%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.mini2 {
+  width: 30%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.mini3 {
+  width: 30%;
+  height: 85%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
 .middle {
   border-bottom: 1px;
   width: 99.9%;
@@ -16,11 +75,22 @@
 }
 .euro {
   width: 99.9%;
-  height: 75.3vh;
+  height: auto;
   display: flex;
+  background-color: red;
   border: 1px solid black;
   border-bottom: 1px;
   justify-content: space-between;
+}
+.euro1 {
+  width: 34%;
+  height: 75vh;
+  background-color: yellow;
+  border-right: 1px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .mini {
   width: 100%;
@@ -30,4 +100,59 @@
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second1 {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .mini {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .mini1,
+  .mini2,
+  .mini3 {
+    width: 100%;
+    height: 250px;
+  }
+  .front {
+    font-size: 20px;
+  }
+  .euro {
+    flex-direction: column;
+  }
+  .euro > div {
+    width: 100%;
+    height: auto;
+  }
+  .euro1 {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
